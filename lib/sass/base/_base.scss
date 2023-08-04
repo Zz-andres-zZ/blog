@@ -1,0 +1,16 @@
+// turn off bootstrap scroll behavior
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: inherit;
+    }
+}
+
+::selection {
+    color: $color-light;
+    background: $color-primary;
+}
+
+body {
+    box-sizing: border-box;
+    touch-action: manipulation;
+}

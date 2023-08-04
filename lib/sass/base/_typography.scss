@@ -1,0 +1,31 @@
+@font-face {
+    font-family: Verlag;
+    src: url("../font/Comfortaa-VariableFont_wght.ttf"),
+        url("../font/Comfortaa/Comfortaa-Bold.ttf"),
+        url("../font/Comfortaa/Comfortaa-Light.ttf"),
+        url("../font/Comfortaa/Comfortaa-Medium.ttf"),
+        url("../font/Comfortaa/Comfortaa-Regular.ttf"),
+        url("../font/Comfortaa/Comfortaa-SemiBold.ttf");
+}
+
+$font-family_1: "Comfortaa", Verlag;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family_1;
+    color: $color-dark;
+    font-weight: bold;
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+    font-weight: 700;
+}
