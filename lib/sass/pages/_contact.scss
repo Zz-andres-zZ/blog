@@ -1,0 +1,87 @@
+#banner {
+    background: url(../images/banner/banner-contact.png) center center no-repeat;
+    background-size: cover;
+    padding: 100px 0px;
+    position: relative;
+    z-index: 1;
+    min-height: 560px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(58, 58, 58, 0.25);
+        z-index: -1;
+    }
+
+    h2 {
+        color: $color-default;
+        text-transform: uppercase;
+        font-size: 28px;
+    }
+
+    p {
+        color: $color-light;
+    }
+
+    .get-quotes {
+        background-color: rgba(255, 253, 255, 0.42);
+        padding: 2rem 1rem 1rem 1rem;
+        border-radius: 0px 10px 10px 10px;
+        width: 100%;
+        form {
+            .row {
+                label {
+                    margin-bottom: 10px;
+                }
+
+                input {
+                }
+            }
+            .butt {
+                display: flex;
+                justify-content: end;
+                button {
+                    
+                }
+            }
+        }
+    }
+
+    .tab-content > .active {
+        display: block;
+        padding: 0px;
+    }
+
+    .nav-tabs {
+        border-bottom: 0;
+        .nav-item {
+            margin-bottom: 0px;
+            .nav-link {
+                border: 0;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+                color: $color-default;
+                font-weight: 600;
+                background: $color-primary;
+            }
+        }
+    }
+
+    @include response(phone) {
+        #banner .nav-link {
+            padding: 10px 10px;
+            font-size: 13px;
+        }
+    }
+}
+
+#banner .nav-tabs .nav-item.show .nav-link,
+#banner .nav-tabs .nav-link.active {
+    color: #795548;
+    background-color: rgba(255, 253, 255, 0.42);
+    border-color: #dee2e6 #dee2e6 #fff;
+}
