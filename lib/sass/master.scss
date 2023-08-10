@@ -1,3 +1,7 @@
-@import "./base/base";
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
+
+@import "./base/base";
+
+@import "./components/welcome";
+@import "./components/comment";

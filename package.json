@@ -1,0 +1,8 @@
+{
+    "name": "mi-proyecto-php",
+    "version": "1.0.0",
+    "description": "Mi Proyecto PHP",
+    "scripts": {
+        "watch:sass": "npx --no-install sass --watch lib/sass/master.scss:lib/css/master.css"
+    }
+}
